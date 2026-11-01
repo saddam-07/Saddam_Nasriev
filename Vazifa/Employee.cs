@@ -13,9 +13,14 @@ class Employee
         Maosh = maosh;
     }
 
-    public decimal Procent(decimal x)
+    public virtual decimal Procent()
     {
-        return Maosh - (Maosh * (x / 100));
+        return Maosh;
+    }
+
+    public virtual void PrintInfo()
+    {
+        Console.Write($"Name: {Name}, Age: {Age}, Amount: {Procent()}, ");
     }
 
 

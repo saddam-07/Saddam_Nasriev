@@ -9,4 +9,15 @@ class Designer : Employee
     {
         Stack = stack;
     }
+
+    public override decimal Procent()
+    {
+        return Maosh + 150m;
+    }
+
+    public override void PrintInfo()
+    {
+        base.PrintInfo();
+        Console.Write($"Stack: {Stack}");
+    }
 }

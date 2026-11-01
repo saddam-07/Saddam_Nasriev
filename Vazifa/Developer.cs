@@ -9,4 +9,15 @@ class Developer : Employee
     {
         Degree = degree;
     }
+
+    public override decimal Procent()
+    {
+        return Maosh + 500m;
+    }
+
+    public override void PrintInfo()
+    {
+        base.PrintInfo();
+        Console.Write($"Degree: {Degree}");
+    }
 }

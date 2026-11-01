@@ -10,5 +10,15 @@ class Manager : Employee
         TimeOfWork = timeofwork;
     }
     
+    public override decimal Procent()
+    {
+        return Maosh + (TimeOfWork * 50);
+    }
+
+    public override void PrintInfo()
+    {
+        base.PrintInfo();
+        Console.Write($"Experience: {TimeOfWork}");
+    }
     
 }
